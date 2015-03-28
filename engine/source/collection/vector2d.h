@@ -90,7 +90,7 @@ public:
 
     //---------------------------------------------------------
 
-    T& get( const Vector2 v )
+    T& get( const Point2F v )
     {
         U32 index = ( v.mY * mWidth ) + v.mX;
         return mArray[index];

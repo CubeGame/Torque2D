@@ -74,18 +74,6 @@
 #include "math/mathTypes.h"
 #endif
 
-#ifndef _VECTOR2_H_
-#include "2d/core/Vector2.h"
-#endif
-
-#ifndef _IMAGE_ASSET_H_
-#include "2d/assets/ImageAsset.h"
-#endif
-
-#ifndef _ANIMATION_ASSET_H_
-#include "2d/assets/AnimationAsset.h"
-#endif
-
 #ifndef _AUDIO_ASSET_H_
 #include "audio/AudioAsset.h"
 #endif
@@ -1054,19 +1042,6 @@ bool Taml::generateTamlSchema()
     // Generate console type elements.
     // *************************************************************
 
-    // Vector2.
-    TiXmlComment* pVector2Comment = new TiXmlComment( "Vector2 Console Type" );
-    pSchemaElement->LinkEndChild( pVector2Comment );
-    TiXmlElement* pVector2TypeElement = new TiXmlElement( "xs:simpleType" );
-    pVector2TypeElement->SetAttribute( "name", "Vector2_ConsoleType" );
-    pSchemaElement->LinkEndChild( pVector2TypeElement );
-    TiXmlElement* pVector2ElementA = new TiXmlElement( "xs:restriction" );
-    pVector2ElementA->SetAttribute( "base", "xs:string" );
-    pVector2TypeElement->LinkEndChild( pVector2ElementA );
-    TiXmlElement* pVector2ElementB = new TiXmlElement( "xs:pattern" );
-    pVector2ElementB->SetAttribute( "value", "([-]?(\\b[0-9]+)?\\.)?[0-9]+\\b ([-]?(\\b[0-9]+)?\\.)?[0-9]+\\b" );   
-    pVector2ElementA->LinkEndChild( pVector2ElementB );
-
     // Point2F.
     TiXmlComment* pPoint2FComment = new TiXmlComment( "Point2F Console Type" );
     pSchemaElement->LinkEndChild( pPoint2FComment );
@@ -1393,11 +1368,6 @@ bool Taml::generateTamlSchema()
                 {
                     pFieldTypeDescription = "xs:boolean";
                 }
-                else if( fieldType == TypeVector2 )
-                {
-                    pFieldTypeDescription = "Vector2_ConsoleType";
-                }
-
                 else if( fieldType == TypePoint2F )
                 {
                     pFieldTypeDescription = "Point2F_ConsoleType";
@@ -1427,8 +1397,7 @@ bool Taml::generateTamlSchema()
                     pFieldTypeDescription = "ColorI_ConsoleType";
                 }
                 else if(    fieldType == TypeAssetId ||
-                            fieldType == TypeImageAssetPtr ||
-                            fieldType == TypeAnimationAssetPtr ||
+ 
                             fieldType == TypeAudioAssetPtr )
                 {
                     pFieldTypeDescription = "AssetId_ConsoleType";

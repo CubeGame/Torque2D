@@ -22,9 +22,6 @@
 
 #include "2d/core/Vector2.h"
 
-// Script bindings.
-#include "Vector2_ScriptBinding.h"
-
 //-----------------------------------------------------------------------------
 
 ConsoleType( Vector2, TypeVector2, sizeof(Vector2), "" )

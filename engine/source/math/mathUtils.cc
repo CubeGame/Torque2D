@@ -23,7 +23,6 @@
 #include "math/mMath.h"
 #include "math/mathUtils.h"
 #include "math/mRandom.h"
-#include "2d/core/Vector2.h"
 
 RandomLCG sgRandom(0xdeadbeef); ///< Our random number generator.
 

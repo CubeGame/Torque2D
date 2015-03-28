@@ -25,7 +25,6 @@
 
 class Point3F;
 class MatrixF;
-struct Vector2;
 
 #ifndef _MPOINT_H_
 #include "mPoint.h"

@@ -4,20 +4,8 @@
     <Filter Include="2d">
       <UniqueIdentifier>{b90d3c2c-9694-4051-8b22-325c00d37951}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2d\assets">
-      <UniqueIdentifier>{57099cfd-2f9b-468f-88a5-df769a6235b0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\sceneobject">
-      <UniqueIdentifier>{8b011278-0d15-4ba9-ba57-24056b918233}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2d\core">
       <UniqueIdentifier>{b0a55e16-3a1f-4eb5-8f5b-3396d456be74}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\scene">
-      <UniqueIdentifier>{71933100-a4a2-464e-bb3f-bb04d9f078af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\gui">
-      <UniqueIdentifier>{7824869e-4359-4413-a615-38c8534d641b}</UniqueIdentifier>
     </Filter>
     <Filter Include="algorithm">
       <UniqueIdentifier>{baaa5934-0805-46eb-be6e-ae5643535b4b}</UniqueIdentifier>
@@ -166,18 +154,6 @@
     <Filter Include="testing\tests">
       <UniqueIdentifier>{57e1271d-4358-4180-b168-4b9c2cbac907}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2d\controllers">
-      <UniqueIdentifier>{a9e97335-bed5-4f6a-9959-12f5f41dbdcb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\controllers\core">
-      <UniqueIdentifier>{e11e344e-6418-4ed0-980a-77d66cd64d65}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\experimental">
-      <UniqueIdentifier>{1eb9e730-583b-4aa4-ac25-b83960799ba4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\experimental\composites">
-      <UniqueIdentifier>{30e1ec13-118b-4d50-8e04-76e76fcfdc01}</UniqueIdentifier>
-    </Filter>
     <Filter Include="persistence\rapidjson">
       <UniqueIdentifier>{4d0b6ff3-58d2-4952-bd14-915a50a3b568}</UniqueIdentifier>
     </Filter>
@@ -192,9 +168,6 @@
     </Filter>
     <Filter Include="persistence\taml\xml">
       <UniqueIdentifier>{cc1c1416-376b-4686-a4ac-21d1a35c9390}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="input\leapMotion">
-      <UniqueIdentifier>{addcb993-5059-42bf-a1ea-871f700c67c3}</UniqueIdentifier>
     </Filter>
     <Filter Include="spine">
       <UniqueIdentifier>{bb776838-ed6f-477c-b366-dd0c5c60ae5f}</UniqueIdentifier>
@@ -1116,83 +1089,11 @@
     <ClCompile Include="..\..\source\delegates\delegateSignal.cpp">
       <Filter>delegates</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\AnimationAsset.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\ImageAsset.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\CompositeSprite.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\SceneObject.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\Scroller.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\ShapeVector.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\Sprite.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\Trigger.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\BatchRender.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\RenderProxy.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\SpriteBase.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\SpriteBatch.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\SpriteBatchItem.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\Utility.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\2d\core\Vector2.cc">
       <Filter>2d\core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\ContactFilter.cc">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\DebugDraw.cc">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\Scene.cc">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\WorldQuery.cc">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\gui\guiImageButtonCtrl.cc">
-      <Filter>2d\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\gui\guiSpriteCtrl.cc">
-      <Filter>2d\gui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\gui\guiSceneObjectCtrl.cc">
-      <Filter>2d\gui</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\2d\core\CoreMath.cc">
       <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\SceneRenderFactories.cpp">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\scene\SceneRenderQueue.cpp">
-      <Filter>2d\scene</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\gui\SceneWindow.cc">
-      <Filter>2d\gui</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\debug\remote\RemoteDebuggerBase.cc">
       <Filter>debug\remote</Filter>
@@ -1233,27 +1134,6 @@
     <ClCompile Include="..\..\source\graphics\color.cc">
       <Filter>graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\ParticleAsset.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\ParticleAssetEmitter.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\ParticleAssetField.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\ParticleAssetFieldCollection.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\ParticlePlayer.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\ParticleSystem.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\ImageFont.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\assets\declaredAssets.cc">
       <Filter>assets</Filter>
     </ClCompile>
@@ -1262,39 +1142,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\persistence\taml\tamlCustom.cc">
       <Filter>persistence\taml</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\SceneObjectSet.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\SceneObjectList.cc">
-      <Filter>2d\sceneobject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\controllers\BuoyancyController.cc">
-      <Filter>2d\controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\controllers\PointForceController.cc">
-      <Filter>2d\controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\controllers\core\GroupedSceneController.cc">
-      <Filter>2d\controllers\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\controllers\core\PickingSceneController.cc">
-      <Filter>2d\controllers\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\controllers\AmbientForceController.cc">
-      <Filter>2d\controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\SpriteBatchQuery.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\experimental\composites\WaveComposite.cc">
-      <Filter>2d\experimental\composites</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\ImageFrameProvider.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\ImageFrameProviderCore.cc">
-      <Filter>2d\core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\persistence\taml\binary\tamlBinaryReader.cc">
       <Filter>persistence\taml\binary</Filter>
@@ -1343,12 +1190,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\console\Package.cc">
       <Filter>console</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionManager.cc">
-      <Filter>input\leapMotion</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\input\leapMotion\leapMotionUtil.cpp">
-      <Filter>input\leapMotion</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\math\mPoint.cpp">
       <Filter>math</Filter>
@@ -1419,11 +1260,8 @@
     <ClCompile Include="..\..\source\spine\SlotData.c">
       <Filter>spine</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\assets\SkeletonAsset.cc">
-      <Filter>2d\assets</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\2d\sceneobject\SkeletonObject.cc">
-      <Filter>2d\sceneobject</Filter>
+    <ClCompile Include="..\..\source\2d\core\Utility.cc">
+      <Filter>2d\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2444,158 +2282,17 @@
     <ClInclude Include="..\..\source\delegates\delegateSignal.h">
       <Filter>delegates</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\AnimationAsset.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\AnimationAsset_ScriptBinding.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ImageAsset.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ImageAsset_ScriptBinding.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\CompositeSprite.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\CompositeSprite_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObject.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObject_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObjectMoveToEvent.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObjectRotateToEvent.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Scroller.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Scroller_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ShapeVector.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ShapeVector_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Sprite.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Sprite_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Trigger.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\Trigger_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\BatchRender.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\RenderProxy.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\RenderProxy_ScriptBinding.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBase.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBase_ScriptBinding.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBatch.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBatchItem.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\2d\core\Utility.h">
       <Filter>2d\core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\2d\core\Vector2.h">
       <Filter>2d\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\Vector2_ScriptBinding.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\ContactFilter.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\DebugDraw.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\DebugStats.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\PhysicsProxy.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\Scene.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\Scene_ScriptBinding.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\SceneRenderObject.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\SceneRenderQueue.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\SceneRenderRequest.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\SceneRenderState.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\WorldQuery.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\guiImageButtonCtrl.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\guiImageButtonCtrl_ScriptBindings.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\guiSpriteCtrl.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\guiSpriteCtrl_ScriptBindings.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\guiSceneObjectCtrl.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\2d\core\CoreMath.h">
       <Filter>2d\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\SceneRenderFactories.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\WorldQueryFilter.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\scene\WorldQueryResult.h">
-      <Filter>2d\scene</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\algorithm\md5.h">
       <Filter>algorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\SceneWindow.h">
-      <Filter>2d\gui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\gui\SceneWindow_ScriptBinding.h">
-      <Filter>2d\gui</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\debug\remote\RemoteDebuggerBase.h">
       <Filter>debug\remote</Filter>
@@ -2663,39 +2360,6 @@
     <ClInclude Include="..\..\source\persistence\taml\tamlChildren.h">
       <Filter>persistence\taml</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAsset.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAsset_ScriptBinding.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAssetEmitter.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAssetField.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAssetFieldCollection.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ParticlePlayer.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ParticlePlayer_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\ParticleAssetEmitter_ScriptBinding.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\ParticleSystem.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ImageFont.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\ImageFont_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\assets\declaredAssets.h">
       <Filter>assets</Filter>
     </ClInclude>
@@ -2707,66 +2371,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\sim\simObjectTimerEvent.h">
       <Filter>sim</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObjectSet.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObjectList.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SceneObjectSet_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\BuoyancyController.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\BuoyancyController_ScriptBinding.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\PointForceController.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\PointForceController_ScriptBinding.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\core\GroupedSceneController.h">
-      <Filter>2d\controllers\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\core\GroupedSceneController_ScriptBinding.h">
-      <Filter>2d\controllers\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\core\PickingSceneController.h">
-      <Filter>2d\controllers\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\core\PickingSceneController_ScriptBinding.h">
-      <Filter>2d\controllers\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\core\SceneController.h">
-      <Filter>2d\controllers\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\AmbientForceController.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\controllers\AmbientForceController_ScriptBinding.h">
-      <Filter>2d\controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBatchQuery.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\SpriteBatchQueryResult.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\experimental\composites\WaveComposite.h">
-      <Filter>2d\experimental\composites</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\experimental\composites\WaveComposite_ScriptBinding.h">
-      <Filter>2d\experimental\composites</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\ImageFrameProvider.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\ImageFrameProviderCore.h">
-      <Filter>2d\core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\persistence\rapidjson\include\rapidjson\allocators.h">
       <Filter>persistence\rapidjson</Filter>
@@ -3066,18 +2670,6 @@
     <ClInclude Include="..\..\source\console\Package.h">
       <Filter>console</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionConstants.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionManager.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\LeapMotionManager_ScriptBinding.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\input\leapMotion\leapMotionUtil.h">
-      <Filter>input\leapMotion</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\spine\Animation.h">
       <Filter>spine</Filter>
     </ClInclude>
@@ -3146,18 +2738,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\spine\spine.h">
       <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\SkeletonAsset.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\assets\SkeletonAsset_ScriptBinding.h">
-      <Filter>2d\assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SkeletonObject_ScriptBinding.h">
-      <Filter>2d\sceneobject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\sceneobject\SkeletonObject.h">
-      <Filter>2d\sceneobject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
