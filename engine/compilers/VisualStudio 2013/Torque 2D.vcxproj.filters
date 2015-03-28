@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="2d">
-      <UniqueIdentifier>{b90d3c2c-9694-4051-8b22-325c00d37951}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2d\core">
-      <UniqueIdentifier>{b0a55e16-3a1f-4eb5-8f5b-3396d456be74}</UniqueIdentifier>
-    </Filter>
     <Filter Include="algorithm">
       <UniqueIdentifier>{baaa5934-0805-46eb-be6e-ae5643535b4b}</UniqueIdentifier>
     </Filter>
@@ -147,6 +141,9 @@
     </Filter>
     <Filter Include="spine">
       <UniqueIdentifier>{bb776838-ed6f-477c-b366-dd0c5c60ae5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{f0e641b1-95df-4a6d-a985-dc1cc2c3ecf0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -927,9 +924,6 @@
     <ClCompile Include="..\..\source\delegates\delegateSignal.cpp">
       <Filter>delegates</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\CoreMath.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\debug\remote\RemoteDebuggerBase.cc">
       <Filter>debug\remote</Filter>
     </ClCompile>
@@ -1095,8 +1089,8 @@
     <ClCompile Include="..\..\source\spine\SlotData.c">
       <Filter>spine</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\Utility.cc">
-      <Filter>2d\core</Filter>
+    <ClCompile Include="..\..\source\utility\Utility.cc">
+      <Filter>utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1973,12 +1967,6 @@
     <ClInclude Include="..\..\source\delegates\delegateSignal.h">
       <Filter>delegates</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\Utility.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\CoreMath.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\algorithm\md5.h">
       <Filter>algorithm</Filter>
     </ClInclude>
@@ -2313,9 +2301,6 @@
     <ClInclude Include="..\..\source\platformWin32\winInput_ScriptBinding.h">
       <Filter>platformWin32</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\Utility_ScriptBinding.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\platformWin32\winExec_ScriptBinding.h">
       <Filter>platformWin32</Filter>
     </ClInclude>
@@ -2426,6 +2411,12 @@
     </ClInclude>
     <ClInclude Include="..\..\source\spine\spine.h">
       <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\utility\Utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\utility\Utility_ScriptBinding.h">
+      <Filter>utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
