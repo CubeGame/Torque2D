@@ -26,52 +26,8 @@
 #include "console/console.h"
 #include "math/mRandom.h"
 #include "2d/core/Utility.h"
-#include "2d/core/Vector2.h"
 
 #include "Utility_ScriptBinding.h"
-
-//-----------------------------------------------------------------------------
-
-ConsoleType( b2AABB, Typeb2AABB, sizeof(b2AABB), "" )
-
-ConsoleGetType( Typeb2AABB )
-{
-    // Fetch AABB.
-    const b2AABB* pAABB = (b2AABB*)dptr;
-
-    // Format AABB.
-    char* pBuffer = Con::getReturnBuffer(64);
-    dSprintf(pBuffer, 64, "%.5g %.5g %.5g %.5g", pAABB->lowerBound.x, pAABB->lowerBound.y, pAABB->upperBound.x, pAABB->upperBound.y );
-    return pBuffer;
-}
-
-ConsoleSetType( Typeb2AABB )
-{
-    // Fetch AABB.
-    b2AABB* pAABB = (b2AABB*)dptr;
-
-    // "lowerX lowerY upperX upperY".
-    if( argc == 1 )
-    {
-        if ( dSscanf(argv[0], "%g %g %g %g", &(pAABB->lowerBound.x), &(pAABB->lowerBound.y), &(pAABB->upperBound.x), &(pAABB->upperBound.y) ) == 4 )
-            return;
-    }
-    
-    // "lowerX,lowerY,upperX,upperY".
-    else if( argc == 4 )
-    {
-        pAABB->lowerBound.Set( dAtof(argv[0]), dAtof(argv[1] ) );
-        pAABB->upperBound.Set( dAtof(argv[2]), dAtof(argv[3] ) );
-        return;
-    }
-
-    // Reset the AABB.
-    pAABB->lowerBound.SetZero();
-    pAABB->upperBound.SetZero();
-
-    // Warn.
-    Con::printf("Typeb2AABB must be set as { lowerX, lowerY, upperX, upperY } or \"lowerX lowerY upperX upperY\"");
-}
 
 //-----------------------------------------------------------------------------
 
@@ -88,23 +44,6 @@ const char* mGetFirstNonWhitespace( const char* inString )
 
    // Return found point.
    return inString;
-}
-
-//------------------------------------------------------------------------------
-
-// NOTE:-   You must verify that elements (index/index+1) are valid first!
-Vector2 mGetStringElementVector( const char* inString, const U32 index )
-{
-    const U32 elementCount = Utility::mGetStringElementCount(inString);
-
-    if ((index + 1) >= elementCount )
-    {
-        const F32 element = dAtof(mGetStringElement(inString,index));
-        return Vector2(element, element);
-    }
-
-    // Get String Element Vector.
-    return Vector2( dAtof(mGetStringElement(inString,index)), dAtof(Utility::mGetStringElement(inString,index+1)) );
 }
 
 //------------------------------------------------------------------------------

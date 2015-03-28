@@ -241,7 +241,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\source\2d\core\CoreMath.cc" />
     <ClCompile Include="..\..\source\2d\core\Utility.cc" />
-    <ClCompile Include="..\..\source\2d\core\Vector2.cc" />
     <ClCompile Include="..\..\source\algorithm\crc.cc" />
     <ClCompile Include="..\..\source\algorithm\hashFunction.cc" />
     <ClCompile Include="..\..\source\assets\assetBase.cc" />
@@ -607,7 +606,6 @@
     <ClInclude Include="..\..\source\2d\core\CoreMath.h" />
     <ClInclude Include="..\..\source\2d\core\Utility.h" />
     <ClInclude Include="..\..\source\2d\core\Utility_ScriptBinding.h" />
-    <ClInclude Include="..\..\source\2d\core\Vector2.h" />
     <ClInclude Include="..\..\source\algorithm\crc.h" />
     <ClInclude Include="..\..\source\algorithm\crctab.h" />
     <ClInclude Include="..\..\source\algorithm\hashFunction.h" />
@@ -692,7 +690,6 @@
     <ClInclude Include="..\..\source\collection\undo.h" />
     <ClInclude Include="..\..\source\collection\undo_ScriptBinding.h" />
     <ClInclude Include="..\..\source\collection\vector.h" />
-    <ClInclude Include="..\..\source\collection\vector2d.h" />
     <ClInclude Include="..\..\source\collection\vectorHeap.h" />
     <ClInclude Include="..\..\source\collection\vectorQueue.h" />
     <ClInclude Include="..\..\source\component\behaviors\behaviorComponentRaiseEvent.h" />

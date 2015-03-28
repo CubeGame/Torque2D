@@ -1376,10 +1376,6 @@ bool Taml::generateTamlSchema()
                 {
                     pFieldTypeDescription = "Point2I_ConsoleType";
                 }
-                else if( fieldType == Typeb2AABB )
-                {
-                    pFieldTypeDescription = "b2AABB_ConsoleType";
-                }
                 else if( fieldType == TypeRectI )
                 {
                     pFieldTypeDescription = "RectI_ConsoleType";

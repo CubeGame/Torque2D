@@ -53,14 +53,11 @@
 //-----------------------------------------------------------------------------
 
 class SceneObject;
-struct Vector2;
 
 typedef Vector<SceneObject*> typeSceneObjectVector;
 typedef const Vector<SceneObject*>& typeSceneObjectVectorConstRef;
 
 ///-----------------------------------------------------------------------------
-
-DefineConsoleType( Typeb2AABB )
 
 //-----------------------------------------------------------------------------
 
@@ -76,7 +73,6 @@ namespace Utility
 
 /// String helpers.
 const char* mGetFirstNonWhitespace( const char* inString );
-Vector2 mGetStringElementVector( const char* inString, const U32 index = 0 );
 VectorF mGetStringElementVector3D( const char* inString, const U32 index = 0 );
 const char* mGetStringElement( const char* inString, const U32 index, const bool copyBuffer = true );
 U32 mGetStringElementCount( const char *string );

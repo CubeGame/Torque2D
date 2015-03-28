@@ -764,9 +764,6 @@ ConsoleMethodWithDocs(SimObject, getType, ConsoleInt, 2, 2, ())
 	echo(s.getFieldType(angle));
 	> float
 
-	echo(s.getFieldType(position));
-	> Vector2
-
 	echo(s.getFieldType(class));
 	> string
 

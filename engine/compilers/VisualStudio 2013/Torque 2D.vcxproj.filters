@@ -1089,9 +1089,6 @@
     <ClCompile Include="..\..\source\delegates\delegateSignal.cpp">
       <Filter>delegates</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\2d\core\Vector2.cc">
-      <Filter>2d\core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\2d\core\CoreMath.cc">
       <Filter>2d\core</Filter>
     </ClCompile>
@@ -2021,9 +2018,6 @@
     <ClInclude Include="..\..\source\collection\vector.h">
       <Filter>collection</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\collection\vector2d.h">
-      <Filter>collection</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\collection\vectorHeap.h">
       <Filter>collection</Filter>
     </ClInclude>
@@ -2283,9 +2277,6 @@
       <Filter>delegates</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\2d\core\Utility.h">
-      <Filter>2d\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\2d\core\Vector2.h">
       <Filter>2d\core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\2d\core\CoreMath.h">
