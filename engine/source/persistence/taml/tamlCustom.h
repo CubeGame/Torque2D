@@ -35,10 +35,6 @@
 #include "console/console.h"
 #endif
 
-#ifndef B2_MATH_H
-#include "Box2D/Common/b2Math.h"
-#endif
-
 #ifndef _COLOR_H_
 #include "graphics/color.h"
 #endif
@@ -137,13 +133,6 @@ public:
         set( pFieldName, fieldValueBuffer );
     }
 
-    inline void setFieldValue( const char* pFieldName, const b2Vec2& fieldValue )
-    {
-        char fieldValueBuffer[32];
-        dSprintf( fieldValueBuffer, sizeof(fieldValueBuffer), "%.5g %.5g", fieldValue.x, fieldValue.y );
-        set( pFieldName, fieldValueBuffer );
-    }
-
     inline void setFieldValue( const char* pFieldName, const U32 fieldValue )
     {
         char fieldValueBuffer[16];
@@ -210,15 +199,6 @@ public:
         {
             // Warn.
             Con::warnf( "TamlCustomField - Reading point2F but it has an incorrect format: '%s'.", mFieldValue );
-        }
-    }
-
-    inline void getFieldValue( b2Vec2& fieldValue ) const
-    {
-        if ( dSscanf( mFieldValue, "%g %g", &fieldValue.x, &fieldValue.y ) != 2 )
-        {
-            // Warn.
-            Con::warnf( "TamlCustomField - Reading vector but it has an incorrect format: '%s'.", mFieldValue );
         }
     }
 
@@ -428,13 +408,6 @@ public:
     }
 
     inline TamlCustomField* addField( const char* pFieldName, const Point2F& fieldValue )
-    {
-        TamlCustomField* pNodeField = TamlCustomFieldFactory.createObject();
-        pNodeField->setFieldValue( pFieldName, fieldValue );
-        return registerField( pNodeField );
-    }
-
-    inline TamlCustomField* addField( const char* pFieldName, const b2Vec2& fieldValue )
     {
         TamlCustomField* pNodeField = TamlCustomFieldFactory.createObject();
         pNodeField->setFieldValue( pFieldName, fieldValue );
