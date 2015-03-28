@@ -1,10 +1,10 @@
 <TorsionProject>
-<Name>Sandbox</Name>
+<Name>Release</Name>
 <WorkingDir/>
 <EntryScript>main.cs</EntryScript>
 <DebugHook>dbgSetParameters( #port#, "#password#", true );</DebugHook>
 <Mods>
-<Folder>modules</Folder>
+<Folder>game</Folder>
 </Mods>
 <ScannerExts>cs; gui</ScannerExts>
 <Configs>
@@ -28,7 +28,7 @@
 </Config>
 </Configs>
 <SearchURL/>
-<SearchProduct>Sandbox</SearchProduct>
+<SearchProduct>Torque2D</SearchProduct>
 <SearchVersion>HEAD</SearchVersion>
 <ExecModifiedScripts>true</ExecModifiedScripts>
 </TorsionProject>
