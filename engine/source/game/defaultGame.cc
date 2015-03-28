@@ -69,10 +69,6 @@
 #include "debug/remote/RemoteDebuggerBridge.h"
 #endif
 
-#ifndef _MODULE_MANAGER_H
-#include "module/moduleManager.h"
-#endif
-
 #ifndef _ASSET_MANAGER_H_
 #include "assets/assetManager.h"
 #endif
@@ -211,15 +207,11 @@ bool initializeGame(int argc, const char **argv)
 
     initMessageBoxVars();
 
-
-    // Register the module manager.
-    ModuleDatabase.registerObject( "ModuleDatabase" );
-
     // Register the asset database.
     AssetDatabase.registerObject( "AssetDatabase" );
 
     // Register the asset database as a module listener.
-    ModuleDatabase.addListener( &AssetDatabase );
+    //ModuleDatabase.addListener( &AssetDatabase );
 
     ActionMap* globalMap = new ActionMap;
     globalMap->registerObject("GlobalActionMap");
@@ -320,9 +312,6 @@ void shutdownGame()
     // Perform the exit callback.
     if( Con::isFunction("onExit") )
         Con::executef(1, "onExit");
-
-    // Unregister the module database.
-    ModuleDatabase.unregisterObject();
 
     // Unregister the asset database.
     AssetDatabase.unregisterObject();

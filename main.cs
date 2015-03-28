@@ -53,18 +53,14 @@ AssetDatabase.EchoInfo = false;
 // This cases assets to stay in memory unless assets are purged.
 AssetDatabase.IgnoreAutoUnload = true;
 
-// Scan modules.
-ModuleDatabase.scanModules( "modules" );
-
-// Load AppCore module.
-ModuleDatabase.LoadExplicit( "AppCore" );
+// Loads scripts from game/ folder
+exec("game/main.cs");
 
 //-----------------------------------------------------------------------------
 
 function onExit()
 {
-    // Unload the AppCore module.
-    ModuleDatabase.unloadExplicit( "AppCore" );
+
 }
 
 function androidBackButton(%val)

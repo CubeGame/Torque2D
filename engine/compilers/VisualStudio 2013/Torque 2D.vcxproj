@@ -355,9 +355,6 @@
     <ClCompile Include="..\..\source\messaging\message.cc" />
     <ClCompile Include="..\..\source\messaging\messageForwarder.cc" />
     <ClCompile Include="..\..\source\messaging\scriptMsgListener.cc" />
-    <ClCompile Include="..\..\source\module\moduleDefinition.cc" />
-    <ClCompile Include="..\..\source\module\moduleManager.cc" />
-    <ClCompile Include="..\..\source\module\moduleMergeDefinition.cc" />
     <ClCompile Include="..\..\source\network\connectionProtocol.cc" />
     <ClCompile Include="..\..\source\network\connectionStringTable.cc" />
     <ClCompile Include="..\..\source\network\httpObject.cc" />
@@ -732,13 +729,6 @@
     <ClInclude Include="..\..\source\messaging\messageForwarder.h" />
     <ClInclude Include="..\..\source\messaging\message_ScriptBinding.h" />
     <ClInclude Include="..\..\source\messaging\scriptMsgListener.h" />
-    <ClInclude Include="..\..\source\module\moduleCallbacks.h" />
-    <ClInclude Include="..\..\source\module\moduleDefinition.h" />
-    <ClInclude Include="..\..\source\module\moduleDefinition_ScriptBinding.h" />
-    <ClInclude Include="..\..\source\module\moduleManager.h" />
-    <ClInclude Include="..\..\source\module\moduleManager_ScriptBinding.h" />
-    <ClInclude Include="..\..\source\module\moduleMergeDefinition.h" />
-    <ClInclude Include="..\..\source\module\tamlModuleIdUpdateVisitor.h" />
     <ClInclude Include="..\..\source\network\connectionProtocol.h" />
     <ClInclude Include="..\..\source\network\connectionProtocol_ScriptBinding.h" />
     <ClInclude Include="..\..\source\network\connectionStringTable.h" />

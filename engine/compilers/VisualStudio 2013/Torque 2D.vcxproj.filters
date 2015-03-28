@@ -73,9 +73,6 @@
     <Filter Include="messaging">
       <UniqueIdentifier>{66757e8b-c204-4b92-92ab-19278019d17d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="module">
-      <UniqueIdentifier>{23024162-0d6f-4259-8dac-a3a621d55065}</UniqueIdentifier>
-    </Filter>
     <Filter Include="network">
       <UniqueIdentifier>{c1b891be-db08-48e9-b52a-f0cf3bac185e}</UniqueIdentifier>
     </Filter>
@@ -492,12 +489,6 @@
     <ClCompile Include="..\..\source\persistence\taml\taml.cc">
       <Filter>persistence\taml</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\module\moduleDefinition.cc">
-      <Filter>module</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\module\moduleManager.cc">
-      <Filter>module</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\persistence\tinyXML\tinystr.cpp">
       <Filter>persistence\tinyXML</Filter>
     </ClCompile>
@@ -509,9 +500,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\persistence\tinyXML\tinyxmlparser.cpp">
       <Filter>persistence\tinyXML</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\module\moduleMergeDefinition.cc">
-      <Filter>module</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\assets\assetManager.cc">
       <Filter>assets</Filter>
@@ -1475,26 +1463,11 @@
     <ClInclude Include="..\..\source\persistence\taml\taml_ScriptBinding.h">
       <Filter>persistence\taml</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleDefinition.h">
-      <Filter>module</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleManager.h">
-      <Filter>module</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleManager_ScriptBinding.h">
-      <Filter>module</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\persistence\tinyXML\tinystr.h">
       <Filter>persistence\tinyXML</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\persistence\tinyXML\tinyxml.h">
       <Filter>persistence\tinyXML</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleDefinition_ScriptBinding.h">
-      <Filter>module</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleMergeDefinition.h">
-      <Filter>module</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\assets\assetDefinition.h">
       <Filter>assets</Filter>
@@ -1534,12 +1507,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\assets\assetTagsManifest_ScriptBinding.h">
       <Filter>assets</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\tamlModuleIdUpdateVisitor.h">
-      <Filter>module</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\module\moduleCallbacks.h">
-      <Filter>module</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\assets\assetBase.h">
       <Filter>assets</Filter>
