@@ -21,7 +21,6 @@
 //-----------------------------------------------------------------------------
 
 // Load system scripts
-exec("./scripts/constants.cs");
 exec("./scripts/defaultPreferences.cs");
 exec("./scripts/canvas.cs");
 exec("./scripts/openal.cs");
