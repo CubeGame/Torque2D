@@ -12,6 +12,7 @@ This shell has the following features to be able to have use in any project:
 * **Scripting** Minimalistic use of TorqueScript, to exposure to your whole project. (Included as part of Torque2D MIT)
 * **Input** Cross Platform Input support, with controller support as well. (Included as part of Torque2D MIT)
 * **Audio** Through the use of OpenAL (Included as part of Torque2D MIT)
+* **Networking** Through the use of the famous Torque networking system that has been used since the old days. (Included as part of Torque2D MIT)
 
 **TODO:**
 
