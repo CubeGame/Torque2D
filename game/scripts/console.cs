@@ -20,24 +20,55 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-// Load system scripts
-exec("./scripts/constants.cs");
-exec("./scripts/defaultPreferences.cs");
-exec("./scripts/canvas.cs");
-exec("./scripts/openal.cs");
+function ConsoleEntry::eval()
+{
+    %text = trim(ConsoleEntry.getValue());
 
-exec("./scripts/guiProfiles.cs");
-exec("./scripts/console.cs");
+    if(strpos(%text, "(") == -1)
+    {
+        if(strpos(%text, "=") == -1 && strpos(%text, " ") == -1)
+        {
+            if(strpos(%text, "{") == -1 && strpos(%text, "}") == -1)
+            {
+                %text = %text @ "()";
+            }
+        }
+    }
 
-// Initialize the canvas
-initializeCanvas("Torque 2D Empty");
+    %pos = strlen(%text) - 1;
+    
+    if(strpos(%text, ";", %pos) == -1 && strpos(%text, "}") == -1)
+        %text = %text @ ";";
 
-// Set the canvas color
-Canvas.BackgroundColor = "CornflowerBlue";
-Canvas.UseBackgroundColor = true;
+    echo("==>" @ %text);
+    eval(%text);
+    ConsoleEntry.setValue("");
 
-// Initialize audio
-initializeOpenAL();
+}
 
-exec("game/gui/ConsoleDialog.gui");
-GlobalActionMap.bind(keyboard, "ctrl tilde", toggleConsole);
+//-----------------------------------------------------------------------------
+
+function ToggleConsole( %make )
+{
+    // Finish if being released.
+    if ( !%make )
+        return;
+        
+    // Is the console awake?
+    if ( ConsoleDialog.isAwake() )
+    {
+        // Yes, so deactivate it.
+        if ( $enableDirectInput )
+            activateKeyboard();
+        Canvas.popDialog(ConsoleDialog);    
+        return;
+    }
+    
+    // Activate it.
+    if ( $enableDirectInput )
+        deactivateKeyboard();    
+        
+    Canvas.pushDialog(ConsoleDialog);
+    ConsoleScrollCtrl.scrollToBottom();    
+    ConsoleEntry.setFirstResponder();
+}

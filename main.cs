@@ -43,9 +43,6 @@ $Scripts::ignoreDSOs = true;
 // Appending version string to avoid conflicts with existing versions and other versions.
 setCompanyAndProduct("GarageGames", "Torque 2D" );
 
-// Set module database information echo.
-ModuleDatabase.EchoInfo = false;
-
 // Set asset database information echo.
 AssetDatabase.EchoInfo = false;
 
@@ -55,6 +52,8 @@ AssetDatabase.IgnoreAutoUnload = true;
 
 // Loads scripts from game/ folder
 exec("game/main.cs");
+
+enableWinConsole(1);
 
 //-----------------------------------------------------------------------------
 
