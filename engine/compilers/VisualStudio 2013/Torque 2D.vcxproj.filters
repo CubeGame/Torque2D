@@ -43,9 +43,6 @@
     <Filter Include="gui\editor">
       <UniqueIdentifier>{c48781cd-5e6a-4ffe-b866-e64582f00d6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="gui\language">
-      <UniqueIdentifier>{eee14c00-6a21-4fa8-9339-572a11819062}</UniqueIdentifier>
-    </Filter>
     <Filter Include="input">
       <UniqueIdentifier>{fcfa64cc-dd46-41c1-9ada-8b4a15051285}</UniqueIdentifier>
     </Filter>
@@ -106,11 +103,11 @@
     <Filter Include="testing\tests">
       <UniqueIdentifier>{57e1271d-4358-4180-b168-4b9c2cbac907}</UniqueIdentifier>
     </Filter>
-    <Filter Include="spine">
-      <UniqueIdentifier>{bb776838-ed6f-477c-b366-dd0c5c60ae5f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="utility">
       <UniqueIdentifier>{f0e641b1-95df-4a6d-a985-dc1cc2c3ecf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\language">
+      <UniqueIdentifier>{28513082-8749-44de-8472-a0b3089ff514}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -443,9 +440,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\gui\editor\guiSeparatorCtrl.cc">
       <Filter>gui\editor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\gui\language\lang.cc">
-      <Filter>gui\language</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\graphics\bitmapBmp.cc">
       <Filter>graphics</Filter>
@@ -900,74 +894,11 @@
     <ClCompile Include="..\..\source\math\mPoint.cpp">
       <Filter>math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\spine\Animation.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\AnimationState.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\AnimationStateData.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Atlas.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\AtlasAttachmentLoader.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Attachment.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\AttachmentLoader.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Bone.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\BoneData.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\BoundingBoxAttachment.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Event.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\EventData.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\extension.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Json.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\RegionAttachment.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Skeleton.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\SkeletonBounds.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\SkeletonData.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\SkeletonJson.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Skin.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\Slot.c">
-      <Filter>spine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\spine\SlotData.c">
-      <Filter>spine</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\utility\Utility.cc">
       <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gui\language\lang.cc">
+      <Filter>gui\language</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1318,9 +1249,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\gui\editor\guiSeparatorCtrl.h">
       <Filter>gui\editor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\gui\language\lang.h">
-      <Filter>gui\language</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\graphics\dgl.h">
       <Filter>graphics</Filter>
@@ -2019,80 +1947,14 @@
     <ClInclude Include="..\..\source\console\Package.h">
       <Filter>console</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\spine\Animation.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\AnimationState.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\AnimationStateData.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Atlas.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\AtlasAttachmentLoader.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Attachment.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\AttachmentLoader.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Bone.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\BoneData.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\BoundingBoxAttachment.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Event.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\EventData.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\extension.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Json.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\RegionAttachment.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Skeleton.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\SkeletonBounds.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\SkeletonData.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\SkeletonJson.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Skin.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\Slot.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\SlotData.h">
-      <Filter>spine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\spine\spine.h">
-      <Filter>spine</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\utility\Utility.h">
       <Filter>utility</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\utility\Utility_ScriptBinding.h">
       <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\gui\language\lang.h">
+      <Filter>gui\language</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
