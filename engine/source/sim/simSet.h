@@ -44,10 +44,6 @@
 #include "sim/simDictionary.h"
 #endif
 
-#ifndef _TAML_CHILDREN_H_
-#include "persistence/taml/tamlChildren.h"
-#endif
-
 //---------------------------------------------------------------------------
 /// A set of SimObjects.
 ///
@@ -98,7 +94,7 @@
 /// @endcode
 ///
 
-class SimSet: public SimObject, public TamlChildren
+class SimSet: public SimObject
 {
    typedef SimObject Parent;
    typedef SimObject Children;

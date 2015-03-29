@@ -51,10 +51,6 @@
 #include "platform/platformSemaphore.h"
 #endif
 
-#ifndef _TAML_CALLBACKS_H_
-#include "persistence/taml/tamlCallbacks.h"
-#endif
-
 #ifndef _SIM_OBJECT_LIST_H_
 #include "sim/SimObjectList.h"
 #endif

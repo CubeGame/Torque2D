@@ -20,10 +20,6 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
-#ifndef _ASSET_MANAGER_H_
-#include "assets/assetManager.h"
-#endif
-
 #include "platform/platform.h"
 
 #ifndef _PLATFORMAUDIO_H_
@@ -38,14 +34,9 @@
 #include "audio/audioDataBlock.h"
 #endif
 
-#ifndef _AUDIO_ASSET_H_
-#include "audio/AudioAsset.h"
-#endif
-
 #ifdef TORQUE_OS_IOS
 #include "platformiOS/iOSStreamSource.h"
 #endif
-
 
 extern ALuint alxGetWaveLen(ALuint buffer);
 
@@ -233,31 +224,7 @@ ConsoleFunctionWithDocs(alGetString, ConsoleString, 2, 2, ( ALEnum ))
 */
 ConsoleFunctionWithDocs(alxGetAudioLength, ConsoleInt, 2, 2, ( audio-assetId ))
 {
-    // Fetch asset Id.
-    const char* pAssetId = argv[1];
-
-    // Acquire audio asset.
-    AudioAsset* pAudioAsset = AssetDatabase.acquireAsset<AudioAsset>( pAssetId );
-
-    // Did we get the audio asset?
-    if ( pAudioAsset == NULL )
-    {
-        // No, so warn.
-        Con::warnf( "alxGetAudioLength() - Could not find audio asset '%s'.", pAssetId );
-        return 0;
-    }
-
-    Resource<AudioBuffer> buffer = AudioBuffer::find( pAudioAsset->getAudioFile() );
-
-    if ( !buffer.isNull() )
-    {
-        ALuint alBuffer = buffer->getALBuffer();
-        return alxGetWaveLen( alBuffer );
-    }
-
-    // Warn.
-    Con::warnf( "alxGetAudioLength() - Could not find audio file '%s' for asset '%s'.", pAudioAsset->getAudioFile(), pAssetId );
-
+   // TODO CONSOLE METHOD FOR REFACTOR
     return 0;
 }
 
@@ -270,27 +237,9 @@ ConsoleFunctionWithDocs(alxGetAudioLength, ConsoleInt, 2, 2, ( audio-assetId ))
 */
 ConsoleFunctionWithDocs(alxCreateSource, ConsoleInt, 2, 2, (audio-assetId))
 {
-    // Fetch asset Id.
-    const char* pAssetId = argv[1];
+   // TODO CONSOLE METHOD FOR REFACTOR
 
-    // Acquire audio asset.
-    AudioAsset* pAudioAsset = AssetDatabase.acquireAsset<AudioAsset>( pAssetId );
-
-    // Did we get the audio asset?
-    if ( pAudioAsset == NULL )
-    {
-        // No, so warn.
-        Con::warnf( "alxCreateSource() - Could not find audio asset '%s'.", pAssetId );
-        return NULL_AUDIOHANDLE;
-    }
-
-    // Fetch audio handle.
-    AUDIOHANDLE handle = alxCreateSource( pAudioAsset );
-
-    // Release asset.
-    AssetDatabase.releaseAsset( pAssetId );
-
-    return handle;
+   return 0;
 }
 
 
@@ -452,27 +401,8 @@ ConsoleFunctionWithDocs(alxGetSourcei, ConsoleInt, 3, 3, ( handle , ALEnum ))
 */
 ConsoleFunctionWithDocs(alxPlay, ConsoleInt, 2, 2, (audio-assetId))
 {
-    // Fetch asset Id.
-    const char* pAssetId = argv[1];
-
-    // Acquire audio asset.
-    AudioAsset* pAudioAsset = AssetDatabase.acquireAsset<AudioAsset>( pAssetId );
-
-    // Did we get the audio asset?
-    if ( pAudioAsset == NULL )
-    {
-        // No, so warn.
-        Con::warnf( "alxPlay() - Could not find audio asset '%s'.", pAssetId );
-        return NULL_AUDIOHANDLE;
-    }
-
-    // Fetch audio handle.
-    AUDIOHANDLE handle = alxPlay( pAudioAsset );
-
-    // Release asset.
-    AssetDatabase.releaseAsset( pAssetId );
-
-    return handle;
+   // TODO CONSOLE METHOD FOR REFACTOR
+    return 0;
 }
 
 /*! Use the alxPause function to pause a currently playing sound as specified by handle.

@@ -67,11 +67,11 @@ void GuiCheckBoxCtrl::onMouseDown(const GuiEvent& event)
    if (mProfile->mCanKeyFocus)
       setFirstResponder();
 
-   if (mProfile->mSoundButtonDown)
-   {
-      AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonDown);
-      alxPlay(handle);
-   }
+   //if (mProfile->mSoundButtonDown)
+   //{
+      //AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonDown);
+      //alxPlay(handle);
+   //}
 
    //lock the mouse
    mouseLock();

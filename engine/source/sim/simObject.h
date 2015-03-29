@@ -31,10 +31,6 @@
 #include "sim/simFieldDictionary.h"
 #endif
 
-#ifndef _TAML_CALLBACKS_H_
-#include "persistence/taml/tamlCallbacks.h"
-#endif
-
 //-----------------------------------------------------------------------------
 
 typedef U32 SimObjectId;
@@ -227,7 +223,7 @@ class SimGroup;
 /// set automatically by the console constructor code.
 ///
 /// @nosubgrouping
-class SimObject: public ConsoleObject, public TamlCallbacks
+class SimObject: public ConsoleObject
 {
     typedef ConsoleObject Parent;
 
@@ -315,16 +311,6 @@ protected:
 
     private:
     SimFieldDictionary *mFieldDictionary;    ///< Storage for dynamic fields.
-
-protected:
-    /// Taml callbacks.
-    virtual void onTamlPreWrite( void ) {}
-    virtual void onTamlPostWrite( void ) {}
-    virtual void onTamlPreRead( void ) {}
-    virtual void onTamlPostRead( const TamlCustomNodes& customNodes ) {}
-    virtual void onTamlAddParent( SimObject* pParentObject ) {}
-    virtual void onTamlCustomWrite( TamlCustomNodes& customNodes ) {}
-    virtual void onTamlCustomRead( const TamlCustomNodes& customNodes ) {}
     
 protected:
     bool	mCanSaveFieldDictionary; ///< true if dynamic fields (added at runtime) should be saved, defaults to true

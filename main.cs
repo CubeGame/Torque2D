@@ -43,17 +43,8 @@ $Scripts::ignoreDSOs = true;
 // Appending version string to avoid conflicts with existing versions and other versions.
 setCompanyAndProduct("GarageGames", "Torque 2D" );
 
-// Set asset database information echo.
-AssetDatabase.EchoInfo = false;
-
-// Set the asset manager to ignore any auto-unload assets.
-// This cases assets to stay in memory unless assets are purged.
-AssetDatabase.IgnoreAutoUnload = true;
-
 // Loads scripts from game/ folder
 exec("game/main.cs");
-
-enableWinConsole(1);
 
 //-----------------------------------------------------------------------------
 

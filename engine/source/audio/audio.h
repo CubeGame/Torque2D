@@ -31,10 +31,6 @@
 #include "audio/audioDataBlock.h"
 #endif
 
-#ifndef _AUDIO_ASSET_H_
-#include "audio/AudioAsset.h"
-#endif
-
 //-Mat default sample rate, change as needed
 #define DEFAULT_SOUND_OUTPUT_RATE		44100
 

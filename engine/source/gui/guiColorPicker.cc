@@ -27,6 +27,7 @@
 #include "gui/buttons/guiButtonCtrl.h"
 #include "gui/guiDefaultControlRender.h"
 #include "gui/guiColorPicker.h"
+#include "utility/Utility.h"
 
 /// @name Common colors we use
 /// @{

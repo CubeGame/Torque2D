@@ -23,14 +23,6 @@
 #ifndef _GUITYPES_H_
 #define _GUITYPES_H_
 
-#ifndef _ASSET_FIELD_TYPES_H_
-#include "assets/assetFieldTypes.h"
-#endif
-
-#ifndef _ASSET_PTR_H_
-#include "assets/assetPtr.h"
-#endif
-
 #ifndef _COLOR_H_
 #include "graphics/color.h"
 #endif
@@ -45,10 +37,6 @@
 
 #ifndef _PLATFORMAUDIO_H_
 #include "platform/platformAudio.h"
-#endif
-
-#ifndef _AUDIO_ASSET_H_
-#include "audio/AudioAsset.h"
 #endif
 
 #include "graphics/gFont.h"
@@ -171,10 +159,6 @@ public:
    StringTableEntry mBitmapName;                   ///< Bitmap file name for the bitmap of the control
    TextureHandle mTextureHandle;                   ///< Texture handle for the control
    Vector<RectI> mBitmapArrayRects;                ///< Used for controls which use an array of bitmaps such as checkboxes
-
-   // sound members
-   AssetPtr<AudioAsset> mSoundButtonDown;                 ///< Sound played when the object is "down" ie a button is pushed
-   AssetPtr<AudioAsset> mSoundButtonOver;                 ///< Sound played when the mouse is over the object
 
    GuiControlProfile* mProfileForChildren;         ///< Profile used with children controls (such as the scroll bar on a popup menu) when defined.
 public:

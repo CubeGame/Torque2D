@@ -25,7 +25,6 @@
 #include "console/consoleTypes.h"
 #include "component/simComponent.h"
 #include "io/stream.h"
-#include "behaviors/behaviorTemplate.h"
 
 #include "simComponent_ScriptBinding.h"
 

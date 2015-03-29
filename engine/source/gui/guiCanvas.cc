@@ -31,6 +31,7 @@
 #include "gui/guiControl.h"
 #include "gui/guiCanvas.h"
 #include "game/gameInterface.h"
+#include "utility/Utility.h"
 
 #include "guiCanvas_ScriptBinding.h"
 

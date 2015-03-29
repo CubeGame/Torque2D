@@ -288,7 +288,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,NetClassGroupGameMask, NetClassTypeEvent, NetEventDirAny, className::getParentStaticClassRep())
 
 #define IMPLEMENT_CO_CLIENTEVENT_V1(className)                    \
@@ -296,7 +295,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,NetClassGroupGameMask, NetClassTypeEvent, NetEventDirServerToClient, className::getParentStaticClassRep())
 
 #define IMPLEMENT_CO_SERVEREVENT_V1(className)                    \
@@ -304,7 +302,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,NetClassGroupGameMask, NetClassTypeEvent, NetEventDirClientToServer, className::getParentStaticClassRep())
 
 #define IMPLEMENT_CO_NETEVENT(className,groupMask)                    \
@@ -312,7 +309,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,groupMask, NetClassTypeEvent, NetEventDirAny, className::getParentStaticClassRep())
 
 #define IMPLEMENT_CO_CLIENTEVENT(className,groupMask)                    \
@@ -320,7 +316,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,groupMask, NetClassTypeEvent, NetEventDirServerToClient, className::getParentStaticClassRep())
 
 #define IMPLEMENT_CO_SERVEREVENT(className,groupMask)                    \
@@ -328,7 +323,6 @@ public:
     AbstractClassRep* className::getStaticClassRep() { return &dynClassRep; } \
     AbstractClassRep* className::getParentStaticClassRep() { return Parent::getStaticClassRep(); } \
     AbstractClassRep* className::getContainerChildStaticClassRep() { return NULL; } \
-    AbstractClassRep::WriteCustomTamlSchema className::getStaticWriteCustomTamlSchema() { return NULL; } \
     ConcreteClassRep<className> className::dynClassRep(#className,groupMask, NetClassTypeEvent, NetEventDirClientToServer, className::getParentStaticClassRep())
 
 

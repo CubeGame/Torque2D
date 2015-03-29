@@ -69,10 +69,6 @@
 #include "debug/remote/RemoteDebuggerBridge.h"
 #endif
 
-#ifndef _ASSET_MANAGER_H_
-#include "assets/assetManager.h"
-#endif
-
 #ifdef TORQUE_OS_IOS
 #include "platformiOS/iOSProfiler.h"
 #endif
@@ -207,9 +203,6 @@ bool initializeGame(int argc, const char **argv)
 
     initMessageBoxVars();
 
-    // Register the asset database.
-    AssetDatabase.registerObject( "AssetDatabase" );
-
     // Register the asset database as a module listener.
     //ModuleDatabase.addListener( &AssetDatabase );
 
@@ -312,9 +305,6 @@ void shutdownGame()
     // Perform the exit callback.
     if( Con::isFunction("onExit") )
         Con::executef(1, "onExit");
-
-    // Unregister the asset database.
-    AssetDatabase.unregisterObject();
 }
 
 //--------------------------------------------------------------------------

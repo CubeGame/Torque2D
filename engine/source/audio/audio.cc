@@ -868,7 +868,8 @@ AUDIOHANDLE alxCreateSource(const AudioAsset *profile, const MatrixF *transform)
    if (profile == NULL)
       return NULL_AUDIOHANDLE;
 
-   return alxCreateSource(profile->getAudioDescription(), profile->getAudioFile(), transform, NULL );
+   //return alxCreateSource(profile->getAudioDescription(), profile->getAudioFile(), transform, NULL );
+   return 0;
 }
 
 //--------------------------------------------------------------------------
@@ -954,7 +955,7 @@ AUDIOHANDLE alxPlay(const AudioAsset *profile, const MatrixF *transform, const P
    if(profile == NULL)
       return NULL_AUDIOHANDLE;
 
-   AUDIOHANDLE handle = alxCreateSource(profile->getAudioDescription(), profile->getAudioFile(), transform, NULL);
+   AUDIOHANDLE handle = NULL_AUDIOHANDLE; //alxCreateSource(profile->getAudioDescription(), profile->getAudioFile(), transform, NULL);
    if(handle != NULL_AUDIOHANDLE)
       return(alxPlay(handle));
    return(handle);

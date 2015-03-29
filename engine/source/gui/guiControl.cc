@@ -34,6 +34,7 @@
 #include "gui/editor/guiEditCtrl.h"
 #include "string/unicode.h"
 #include "collection/vector.h"
+#include "string/stringUnit.h"
 
 #include "guiControl_ScriptBinding.h"
 

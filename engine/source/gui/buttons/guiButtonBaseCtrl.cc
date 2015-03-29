@@ -192,11 +192,11 @@ void GuiButtonBaseCtrl::onMouseDown(const GuiEvent &event)
    if (mProfile->mCanKeyFocus)
       setFirstResponder();
 
-   if (mProfile->mSoundButtonDown)
-   {
-      AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonDown);
-      alxPlay(handle);
-   }
+   //if (mProfile->mSoundButtonDown)
+   //{
+      //AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonDown);
+      //alxPlay(handle);
+   //}
 
    //lock the mouse
    mouseLock();
@@ -220,11 +220,11 @@ void GuiButtonBaseCtrl::onMouseEnter(const GuiEvent &event)
    }
    else
    {
-      if ( mActive && mProfile->mSoundButtonOver )
-      {
-         AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonOver);
-         alxPlay(handle);
-      }
+      //if ( mActive && mProfile->mSoundButtonOver )
+      //{
+         //AUDIOHANDLE handle = alxCreateSource(mProfile->mSoundButtonOver);
+         //alxPlay(handle);
+      //}
       mMouseOver = true;
    }
 }
@@ -289,11 +289,11 @@ bool GuiButtonBaseCtrl::onKeyDown(const GuiEvent &event)
    if ((event.keyCode == KEY_RETURN || event.keyCode == KEY_SPACE)
        && event.modifier == 0)
    {
-       if ( mProfile->mSoundButtonDown )
-       {
-          AUDIOHANDLE handle = alxCreateSource( mProfile->mSoundButtonDown );
-          alxPlay( handle );
-       }
+       //if ( mProfile->mSoundButtonDown )
+       //{
+          //AUDIOHANDLE handle = alxCreateSource( mProfile->mSoundButtonDown );
+          //alxPlay( handle );
+       //}
       return true;
    }
    //otherwise, pass the event to it's parent
