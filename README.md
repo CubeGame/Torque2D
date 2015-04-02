@@ -7,7 +7,7 @@ Based off of Torque2D 3.1, this version of Torque2D strips out a lot of things t
 
 This shell has the following features to be able to have use in any project:
 
-* **Cross Platform** Whether you are deploying to Windows (XP+ 32bit and 64bit), OSX (10.6+ 32bit and 64bit Intel), Linux (32bit), or to the Web (32bit), its covered. (Included as part of Torque2D MIT)
+* **Cross Platform** Whether you are deploying to Windows (XP+ 32bit and 64bit), OSX (10.6+ 32bit and 64bit Intel), or Linux (32bit) [And probably FreeBSD (32bit)], its covered. (Included as part of Torque2D MIT)
 * **GUI** The familiar built-in GUI exposed through script that's found in the torque engines. (Included as part of Torque2D MIT)
 * **Scripting** Minimalistic use of TorqueScript, to exposure to your whole project. (Included as part of Torque2D MIT)
 * **Input** Cross Platform Input support, with controller support as well. (Included as part of Torque2D MIT)
