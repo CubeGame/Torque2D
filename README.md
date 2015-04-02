@@ -13,10 +13,10 @@ This shell has the following features to be able to have use in any project:
 * **Input** Cross Platform Input support, with controller support as well. (Included as part of Torque2D MIT)
 * **Audio** Through the use of OpenAL (Included as part of Torque2D MIT)
 * **Networking** Through the use of the famous Torque networking system that has been used since the old days. (Included as part of Torque2D MIT)
+* **Cross Platform Build System** Through the use of [GENie](https://github.com/bkaradzic/genie#what-is-it)
 
 **TODO:**
 
-* **Build System** Using CMAKE
 * **PowerPC OSX** The PowerPC platform for OSX 10.4.11-10.5.8
 * **GLEW** OpenGL GLEW bindings, so that it's no longer restricted to what Torque2D exposes.
 
