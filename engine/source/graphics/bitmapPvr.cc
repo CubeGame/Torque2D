@@ -266,7 +266,7 @@ const static unsigned int PVRTEX_ALPHA			= (1<<15);
 const static unsigned int PVRTEX_IDENTIFIER		= 0x21525650;	// 'P''V''R''!'
 const static unsigned int PVRTEX_PIXELTYPE		= 0xff;			// pixel type is always in the last 16bits of the flags
 // ---------------------------------------------------------------------------------------------
-
+/*
 bool GBitmap::readPvr(Stream& stream)
 {
 	PVRTextureHeaderV2  bi;
@@ -307,3 +307,4 @@ bool GBitmap::writePvr(Stream& io_rStream) const
 {
 	return false; // can't write PVR files
 }
+*/

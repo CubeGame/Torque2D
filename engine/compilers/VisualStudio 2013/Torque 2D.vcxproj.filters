@@ -97,12 +97,6 @@
     <Filter Include="string">
       <UniqueIdentifier>{fa7e2f20-cd6d-4118-8a74-9f9c95119064}</UniqueIdentifier>
     </Filter>
-    <Filter Include="testing">
-      <UniqueIdentifier>{7b04617f-42ef-4238-9a98-9d8309b64c93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="testing\tests">
-      <UniqueIdentifier>{57e1271d-4358-4180-b168-4b9c2cbac907}</UniqueIdentifier>
-    </Filter>
     <Filter Include="utility">
       <UniqueIdentifier>{f0e641b1-95df-4a6d-a985-dc1cc2c3ecf0}</UniqueIdentifier>
     </Filter>
@@ -845,18 +839,6 @@
     </ClCompile>
     <ClCompile Include="..\..\source\network\networkProcessList.cc">
       <Filter>network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\testing\tests\platformFileIoTests.cc">
-      <Filter>testing\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\testing\unitTesting.cc">
-      <Filter>testing</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\testing\tests\platformStringTests.cc">
-      <Filter>testing\tests</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\source\testing\tests\platformMemoryTests.cc">
-      <Filter>testing\tests</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\platform\nativeDialogs\fileDialog.cc">
       <Filter>platform\nativeDialogs</Filter>
@@ -1715,9 +1697,6 @@
     <ClInclude Include="..\..\source\network\networkProcessList.h">
       <Filter>network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\testing\unitTesting.h">
-      <Filter>testing</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\platform\platformFileIO.h">
       <Filter>platform</Filter>
     </ClInclude>
@@ -1922,9 +1901,6 @@
     </ClInclude>
     <ClInclude Include="..\..\source\network\telnetConsole_ScriptBinding.h">
       <Filter>network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\source\testing\unitTesting_ScriptBinding.h">
-      <Filter>testing</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\platform\nativeDialogs\msgBox_ScriptBinding.h">
       <Filter>platform\nativeDialogs</Filter>
