@@ -23,6 +23,7 @@
 #import "platformOSX/platformOSX.h"
 #include "platform/platformVideo.h"
 #include "game/gameInterface.h"
+#include "platformOSX/platformOSX_ScriptBinding.h"
 
 #pragma mark ---- OSXPlatState Implementation ----
 
