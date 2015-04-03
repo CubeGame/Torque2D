@@ -137,12 +137,8 @@ bool netSocketWaitForWritable(NetSocket fd, S32 timeoutMs)
 
 bool Net::init()
 {
-    Con::printSeparator();
-    Con::printf("Network initialization:");
     NetAsync::startAsync();
-    Con::printSeparator();
-
-    return(true);
+    return true;
 }
 
 void Net::shutdown()
