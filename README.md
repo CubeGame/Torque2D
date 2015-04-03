@@ -1,4 +1,3 @@
-![Torque Logo](http://static.garagegames.com/static/pg/logokits/Torque-Logo_H.png)
 ## Torque 2D - Empty
 
 MIT Licensed Open Source version of Torque 2D from GarageGames.
