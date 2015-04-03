@@ -70,3 +70,4 @@ engine/compilers/android/gen/
 engine/compilers/android/obj/
 
 build/Windows/
+Game_DEBUG.app

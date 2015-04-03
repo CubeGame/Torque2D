@@ -33,6 +33,7 @@ solution "Torque2DSolution"
    startproject "Engine"
    configurations { "Release", "Debug" }
    language "C++"
+   --targetdir "../../"
 
    -- Platform support
    if os.get() == "windows" then

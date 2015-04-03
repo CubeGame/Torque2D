@@ -4,7 +4,7 @@
 -- References were used from Andrew Mac's Torque6 engine, which is under
 -- the same license (MIT)
 -- https://github.com/andr3wmac/Torque6
--- Copyright (c) 2015 Andrew Mac 
+-- Copyright (c) 2015 Andrew Mac
 --
 -- Copyright (c) 2015 Jeff Hutchinson
 -- Copyright (c) 2015 Adric Blake
@@ -32,30 +32,29 @@ project "PNG"
    targetname "PNG"
    language "C++"
    kind "StaticLib"
-   location (path.join(BUILD_LOCATION, "lib"))
-   targetdir (path.join(BUILD_LOCATION, "lib"))
-   
+	targetdir (BUILD_LOCATION .. "/bin")
+
    includedirs {
       "../../engine/lib/zlib",
       "../../engine/lib/lpng",
    }
-   
+
    files {
       "../../engine/lib/lpng/**"
    }
-   
+
    configuration "vs*"
       defines { "_CRT_SECURE_NO_WARNINGS" }
-   
+
    configuration "Debug"
       flags   { "Symbols" }
-      
+
    configuration "windows"
       links { "ole32" }
-      
+
    configuration "linux"
       links { "dl" }
-      
+
    configuration { "macosx", "gmake" }
       buildoptions {"-mmacosx-version-min=10.4" }
       linkoptions  {"-mmacosx-version-min=10.4" }

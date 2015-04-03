@@ -4,7 +4,7 @@
 -- References were used from Andrew Mac's Torque6 engine, which is under
 -- the same license (MIT)
 -- https://github.com/andr3wmac/Torque6
--- Copyright (c) 2015 Andrew Mac 
+-- Copyright (c) 2015 Andrew Mac
 --
 -- Copyright (c) 2015 Jeff Hutchinson
 -- Copyright (c) 2015 Adric Blake
@@ -32,18 +32,17 @@ project "JPEG"
    targetname "JPEG"
    language "C++"
    kind "StaticLib"
-   location (path.join(BUILD_LOCATION, "lib"))
-   targetdir (path.join(BUILD_LOCATION, "lib"))
-   
+   targetdir (BUILD_LOCATION .. "/bin")
+
    includedirs {
       "../../engine/lib/ljpeg",
    }
-   
+
    files {
       "../../engine/lib/ljpeg/*.h",
       "../../engine/lib/ljpeg/*.c",
    }
-   
+
    removefiles {
       "../../engine/lib/ljpeg/extras/**",
       "../../engine/lib/ljpeg/**.mac.*",
@@ -55,30 +54,30 @@ project "JPEG"
       "../../engine/lib/ljpeg/jmemmac.c",
       "../../engine/lib/ljpeg/jmemname.c",
       "../../engine/lib/ljpeg/jpegtran.c",
-   }  
-   
+   }
+
    -- Platform specific files for visual studio
    configuration "vs*"
       files {
          "../../engine/lib/ljpeg/jconfig.vc.win.h"
       }
       defines { "_CRT_SECURE_NO_WARNINGS" }
-   
+
    -- Platform specific files for gcc/llvm/clang
    configuration "macosx or linux or bsd or gmake or mingw*"
       files {
          "../../engine/lib/ljpeg/jconfig.gcc.linux.h"
       }
-   
+
    configuration "Debug"
       flags   { "Symbols" }
-      
+
    configuration "windows"
       links { "ole32" }
-      
+
    configuration "linux"
       links { "dl" }
-      
+
    configuration { "macosx", "gmake" }
       buildoptions {"-mmacosx-version-min=10.4" }
       linkoptions  {"-mmacosx-version-min=10.4" }

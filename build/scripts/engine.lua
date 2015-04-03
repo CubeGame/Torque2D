@@ -32,6 +32,7 @@ project "Engine"
    targetname "Engine"
    language "C++"
    kind "WindowedApp"
+   targetdir "../../"
 
    includedirs {
       "../../engine/source",
@@ -131,7 +132,7 @@ project "Engine"
 
    configuration "vs*"
       defines      { "_CRT_SECURE_NO_WARNINGS", "UNICODE" }
-      flags        { "EnableSSE2", "NoNativeWChar" }
+      flags        { "NoNativeWChar" }
       buildoptions { "/wd4100", "/wd4800" }
 
    configuration "windows"
@@ -154,14 +155,9 @@ project "Engine"
       }
 
    configuration "linux"
-      targetdir "../GNU_Linux"
       links { "dl" }
 
-   configuration "bsd"
-      targetdir "../BSD"
-
    configuration "macosx"
-      targetdir "../OSX"
       defines { }
       links {
       	"AppKit.framework",
@@ -172,6 +168,11 @@ project "Engine"
          "OpenAL.framework",
          "OpenGL.framework",
       }
+
+   	-- Include the plist and language files
+   	files {
+   		"../../engine/resources/**",
+   	}
 
    configuration { "macosx", "gmake" }
       buildoptions {"-mmacosx-version-min=10.4" }
