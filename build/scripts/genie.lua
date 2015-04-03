@@ -41,7 +41,11 @@ solution "Torque2DSolution"
       platforms { "x32", "x64" }
    elseif os.get() == "macosx" then
       -- Universal32 is a FAT binary of Intel x86 and PowerPC32
-      platforms { "x32" } --, "x64", "universal32" }
+      if _ACTION == "xcode3" then
+      	platforms { "universal32" }
+      else
+      	platforms { "x32" } --, "x64" }
+      end
    else
       -- Torque2D doesn't officially support x64 on Unix/GNU_Linux
       platforms { "x32" }
