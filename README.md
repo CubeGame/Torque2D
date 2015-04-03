@@ -7,18 +7,13 @@ Based off of Torque2D 3.1, this version of Torque2D strips out a lot of things t
 
 This shell has the following features to be able to have use in any project:
 
-* **Cross Platform** Whether you are deploying to Windows (XP+ 32bit and 64bit), OSX (10.6+ 32bit and 64bit Intel), or Linux (32bit) [And probably FreeBSD (32bit)], its covered. (Included as part of Torque2D MIT)
-* **GUI** The familiar built-in GUI exposed through script that's found in the torque engines. (Included as part of Torque2D MIT)
-* **Scripting** Minimalistic use of TorqueScript, to exposure to your whole project. (Included as part of Torque2D MIT)
-* **Input** Cross Platform Input support, with controller support as well. (Included as part of Torque2D MIT)
-* **Audio** Through the use of OpenAL (Included as part of Torque2D MIT)
-* **Networking** Through the use of the famous Torque networking system that has been used since the old days. (Included as part of Torque2D MIT)
+* **Cross Platform** Windows XP+, MacOSX Intel, Linux, FreeBSD
+* **GUI** The familiar built-in GUI exposed through script that's found in the torque engines.
+* **Scripting** Minimalistic use of TorqueScript, to exposure to your whole project.
+* **Input** Cross Platform Input support, with controller support as well.
+* **Audio** Through the use of cross platform OpenAL audio library.
+* **Networking** Through the use of the famous Torque networking system that has been used since the old days.
 * **Cross Platform Build System** Through the use of [GENie](https://github.com/bkaradzic/genie#what-is-it)
-
-**TODO:**
-
-* **PowerPC OSX** The PowerPC platform for OSX 10.4.11-10.5.8
-* **GLEW** OpenGL GLEW bindings, so that it's no longer restricted to what Torque2D exposes.
 
 ### Building the Source
 
