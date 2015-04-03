@@ -23,7 +23,13 @@ This shell has the following features to be able to have use in any project:
 ### Building the Source
 
 #### Windows
-Navigate to the build directory and double click the genie_vs2013 bat file. Then, open up the solution and compile.
+In the command prompt, CD into the build directory, and execute genie with a visual studio as an argument. Supported compilier is visual studio 2013.
+
+Example command:
+
+```
+"genie.exe vs2013"
+```
 
 #### Mac OSX
 In terminal, CD into the build directory, and execute genie with the xcode4 as the argument. Supported compilier is xcode4 and up.
