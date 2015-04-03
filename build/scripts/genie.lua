@@ -5,7 +5,7 @@
 -- References were used from Andrew Mac's Torque6 engine, which is under
 -- the same license (MIT)
 -- https://github.com/andr3wmac/Torque6
--- Copyright (c) 2015 Andrew Mac 
+-- Copyright (c) 2015 Andrew Mac
 --
 -- Copyright (c) 2015 Jeff Hutchinson
 -- Copyright (c) 2015 Adric Blake
@@ -33,19 +33,19 @@ solution "Torque2DSolution"
    startproject "Engine"
    configurations { "Release", "Debug" }
    language "C++"
-   
+
    -- Platform support
    if os.get() == "windows" then
       -- Torque2D officially supports x32 and x64 on windows
       platforms { "x32", "x64" }
    elseif os.get() == "macosx" then
       -- Universal32 is a FAT binary of Intel x86 and PowerPC32
-      platforms { "x32", "x64", "universal32" }
+      platforms { "x32" } --, "x64", "universal32" }
    else
       -- Torque2D doesn't officially support x64 on Unix/GNU_Linux
       platforms { "x32" }
    end
-   
+
    -- Set location of build files
    BUILD_LOCATION = "";
    if os.get() == "windows" then
@@ -61,10 +61,10 @@ solution "Torque2DSolution"
    end
    print (BUILD_LOCATION);
    location (BUILD_LOCATION)
-   
+
    -- Main engine project
    dofile("engine.lua");
-   
+
    -- Libraries
    group "Libraries"
    dofile("jpeg.lua");

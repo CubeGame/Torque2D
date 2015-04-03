@@ -4,7 +4,7 @@
 -- References were used from Andrew Mac's Torque6 engine, which is under
 -- the same license (MIT)
 -- https://github.com/andr3wmac/Torque6
--- Copyright (c) 2015 Andrew Mac 
+-- Copyright (c) 2015 Andrew Mac
 --
 -- Copyright (c) 2015 Jeff Hutchinson
 -- Copyright (c) 2015 Adric Blake
@@ -32,18 +32,19 @@ project "Engine"
    targetname "Engine"
    language "C++"
    kind "WindowedApp"
-   
+
    includedirs {
       "../../engine/source",
       "../../engine/lib/ljpeg",
       "../../engine/lib/lpng",
-      "../../engine/lib/zlib", 
+      "../../engine/lib/zlib",
    }
-   
+
    files {
       "../../engine/source/algorithm/**",
       "../../engine/source/audio/**",
       "../../engine/source/collection/**",
+      "../../engine/source/component/**",
       "../../engine/source/console/**",
       "../../engine/source/debug/**",
       "../../engine/source/delegates/**",
@@ -64,13 +65,13 @@ project "Engine"
       "../../engine/source/utility/**",
       "../../engine/source/torqueConfig.h",
    }
-   
+
    links {
       "JPEG",
       "PNG",
       "zlib",
    }
-   
+
    -- Platform specific files for Windows
    configuration "windows"
       includedirs {
@@ -83,50 +84,56 @@ project "Engine"
       removefiles {
          "../../engine/source/platform/platformNetAsync.unix.cc",
       }
-   
-   -- Platform specific files for OSX   
+
+   -- Platform specific files for OSX
    configuration "macosx"
       files {
-         "../../engine/source/platformOSX",
+         "../../engine/source/platformOSX/**",
+         "../../engine/source/**.mm",
+         "../../engine/source/**.m",
       }
-      
+      removefiles {
+      	"../../engine/source/math/mMathAMD.cc",
+      	"../../engine/source/math/mMathSSE.cc",
+      }
+
    -- Platform specific files for BSD and Linux based systems
    configuration "linux or bsd"
       files {
          "../../engine/source/platformX86Unix/**",
       }
-      
+
    -- Platform specific files for Linux based systems
    configuration "linux"
       includedirs {
          "../../engine/lib/openal/LINUX",
       }
-      
+
    -- Platform specific files for FreeBSD
    configuration "bsd"
       includedirs {
          "../../engine/lib/openal/FreeBSD"
       }
-   
+
    configuration "Debug"
       targetname "Game_DEBUG"
-      defines { 
-         "_DEBUG", 
-         "TORQUE_DEBUG", 
-         "TORQUE_ENABLE_PROFILER", 
-         "TORQUE_DEBUG_GUARD", 
+      defines {
+         "_DEBUG",
+         "TORQUE_DEBUG",
+         "TORQUE_ENABLE_PROFILER",
+         "TORQUE_DEBUG_GUARD",
       }
       flags   { "Symbols" }
-      
+
    configuration "Release"
       defines { "NDEBUG" }
       flags   { "OptimizeSpeed" }
-      
+
    configuration "vs*"
       defines      { "_CRT_SECURE_NO_WARNINGS", "UNICODE" }
       flags        { "EnableSSE2", "NoNativeWChar" }
       buildoptions { "/wd4100", "/wd4800" }
-      
+
    configuration "windows"
       targetdir "../Windows"
       links {
@@ -145,25 +152,27 @@ project "Engine"
          "ole32",
          "opengl32",
       }
-      
+
    configuration "linux"
       targetdir "../GNU_Linux"
       links { "dl" }
-      
+
    configuration "bsd"
       targetdir "../BSD"
-      
+
    configuration "macosx"
       targetdir "../OSX"
       defines { }
       links {
+      	"AppKit.framework",
          "Cocoa.framework",
+         "CoreData.framework",
          "CoreServices.framework",
-         "Services.framework",
-         "OpenGL.framework",
+         "Foundation.framework",
          "OpenAL.framework",
+         "OpenGL.framework",
       }
-      
+
    configuration { "macosx", "gmake" }
       buildoptions {"-mmacosx-version-min=10.4" }
       linkoptions  {"-mmacosx-version-min=10.4" }
