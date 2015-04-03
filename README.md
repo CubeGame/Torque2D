@@ -22,11 +22,14 @@ This shell has the following features to be able to have use in any project:
 
 ### Building the Source
 
-After downloading a copy of the source code, the following project files for each platform are provided for you and can be found in the `engine/compilers` folder.
+#### Windows
+Navigate to the build directory and double click the genie_vs2013 bat file. Then, open up the solution and compile.
 
-* **Windows:** Visual Studio 2010, 2012, or 2013
-* **OSX:** Xcode
-* **Linux:** Make
-* **Web:** Emscripten/Cmake
+#### Mac OSX
+In terminal, CD into the build directory, and execute genie with the xcode4 as the argument. Supported compilier is xcode4 and up.
 
-See the [wiki](https://github.com/GarageGames/Torque2D/wiki) for available guides on platform setup and development.
+Example command:
+
+```
+"./genie_intel_x64 xcode4"
+```
