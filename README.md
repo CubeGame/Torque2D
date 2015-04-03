@@ -26,10 +26,16 @@ Example command:
 ```
 
 #### Mac OSX
-In terminal, CD into the build directory, and execute genie with the xcode4 as the argument. Supported compilier is xcode4 and up.
+In terminal, CD into the build directory, and execute genie with the xcode3 or xcode4 as the argument. Supported compilier is xcode4 and up for x64 based machines, and xcode3 for powerpc or 32bit based machines.
 
-Example command:
+Example command on x64 based mac:
 
 ```
 "./genie_intel_x64 xcode4"
+```
+
+Example command on a PowerPC mac:
+
+```
+"./genie_ppc xcode3"
 ```
