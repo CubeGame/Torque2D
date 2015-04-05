@@ -132,7 +132,7 @@ project "Engine"
 
    configuration "vs*"
       defines      { "_CRT_SECURE_NO_WARNINGS", "UNICODE" }
-      flags        { "NoNativeWChar" }
+      flags        { "NoNativeWChar", "StaticRuntime" }
       buildoptions { "/wd4100", "/wd4800" }
 
    configuration "windows"

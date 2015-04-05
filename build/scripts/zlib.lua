@@ -44,6 +44,7 @@ project "zlib"
 
    configuration "vs*"
       defines { "_CRT_SECURE_NO_WARNINGS" }
+      flags   { "NoNativeWChar", "StaticRuntime" }
 
    configuration "Debug"
       flags   { "Symbols" }

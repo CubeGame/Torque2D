@@ -62,6 +62,7 @@ project "JPEG"
          "../../engine/lib/ljpeg/jconfig.vc.win.h"
       }
       defines { "_CRT_SECURE_NO_WARNINGS" }
+      flags   { "NoNativeWChar", "StaticRuntime" }
 
    -- Platform specific files for gcc/llvm/clang
    configuration "macosx or linux or bsd or gmake or mingw*"
